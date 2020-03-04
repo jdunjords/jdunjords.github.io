@@ -89,13 +89,13 @@ html, body {
 }
 
 body {
-    background-image: url('sunset_gradient.png');
+    background-image: url('/sunset_gradient.png');
 }
 
 
 .bg {
   /* The image used */
-  background-image: url("sunset_gradient.png");
+  background-image: url("/sunset_gradient.png");
 
   /* Full height */
   height: 100%;
