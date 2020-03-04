@@ -1,45 +1,174 @@
+
+.main-div {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.left-nav-bar {
+    width: 20%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+/*  width: 180px;*/
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li a:hover {
+    font-weight: bold;
+}
+
+.menu {
+    margin-top: 3em;
+}
+
+#portrait {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+}
+
+#portraitFrame {
+	text-align: center;
+    padding: 15px 9px 9px 9px;
+}
+
+#name {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3em;
+    font-weight: 600 !important;
+}
+
+.name-title {
+    border-radius: 0px 30px 0px 0px;
+    text-align: center;
+}
+
+.right-content {
+    width: 820px;
+    padding: 3em;
+}
+
+.about {
+    padding: 2em;
+}
+
+.pdf {
+    display: block;
+    margin: auto;
+    margin-top: 1.2em;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 500 !important;
+}
+
+html, body {
+    height: 100%;
+    color: white;
+}
+
 body {
-	background-color: #000
+    background-image: url('sunset_gradient.png');
 }
 
-#console {
-	font-family: courier, monospace;
-	color: #fff;
-	width:750px;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:100px;
-	font-size:14px;
+
+.bg {
+  /* The image used */
+  background-image: url("sunset_gradient.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-a {
-	color: #0bc;
-	text-decoration: none;
+li a {
+    text-align: center;
+    color: white;
+    font-family: courier new;
 }
 
-#a {
-	color: #0f0;
+.contact {
+    margin-top: 3em;
+    text-align: center;
 }
 
-#c {
-	color: #0bc;
+.subtitle {
+    font-weight: bold;
+}
+    
+h1 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700;}
+h3 { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; }
+p { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; }
+pre { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+
+/* body and .text are NOT required for the blinking cursor. */
+body { background: black }
+
+.text { 
+  position: relative;
+  display: inline-block;
+  font-family: Monaco, Arial, Helvetica, sans-serif;
+  line-height: 24px;
+  font-size: 24px;
+  color: white;
+  min-width: 360px;
 }
 
-#b {
-	color: #ff0096;
+.text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -15px;
+  /* Remove display: inline-block if not required to be on the same line as text etc */
+  display: inline-block;
+  background-color: #606060;
+  vertical-align: top;
+  width: 10px;
+  /* Set height to the line height of .text */
+  height: 24px;
+   
+  Animation paramaters:
+  blink = animation-name, 
+  1s = animation-duration, 
+  step-end = animation-timing-function,
+  infinite = animation-iteration-count
+  -webkit-animation: blink 1s step-end infinite;
+  animation: blink 1s step-end infinite;
 }
 
-#k {
-    	animation: change 1s;
+@-webkit-keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
 }
 
-#op{
-    	color: #888888
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
 }
-
-@keyframes change {
-    	0%  { color:  #0f0; }
-    	50% { color:  #0f0; }
-    	99% { color: black; }
-}
-
