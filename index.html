@@ -1,14 +1,75 @@
-<html> 
-  <head> 
-    <title>CodeNerve</title> 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
-    <link rel="stylesheet" type="text/css" href="index.css">
-  </head> 
-  <body> 
-    <script type="text/javascript" src="index.js"> 
-    </script> 
-    <div id="console"></div> 
-    <script type="text/javascript", src="index2.js">
-    </script>
-  </body> 
-</html> 
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title> Jonas Dunham Jordahl </title>
+		<link rel="stylesheet"  type="text/css" href="index.css">
+	</head>
+	<body class="bg">
+        <div class="main-div d-flex">
+            <div class="left-nav-bar">
+                <div id="portraitFrame">
+                    <img id="portrait" src="jonasPortrait.JPG" alt="me">
+                </div>
+                <ul class="menu">
+                  <li id="about" class="active"><a onclick="updatePage('about')">About</a></li>
+                  <li id="project"><a onclick="updatePage('project')">Projects</a></li>
+                  <li><a href="jonasDunhamJordahl.pdf">Resume</a></li>
+                </ul>
+                <div class="contact">
+                    <p>Northern Arizona University</p>
+                    <p>jdunjords@gmail.com</p>
+                    <a href="https://github.com/jdunjords/"><img src="github.png"></a>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="name-title">
+                    <h1 id="name">Jonas Dunham Jordahl</h1>
+                </div>
+                <div id="content">
+                    <h1>I study Computer Science and sometimes Mathematics</h1><h1>I'm passionate about helping people</h1><p class='about'><span class='subtitle'>I’m a Computer Science student at Northern Arizona University</span><br>I’m pretty fond of new technology, but I’m especially interested in using artificial intelligence to help people whose struggles have been looked over. Right now, I spend most of my time studying and working (i.e., staring at screens), but I also fit in some good books here and there, train for ultramarathons when I’m not too injured, and play the occasional video game.<br><br><span class='subtitle'>Outside of my university studies...</span><br>I’ve been interested in the relationship’s humans have with their food – specifically, how industrialization has undermined the deep connections we used to have with what was on our plate. Also, I come from a lineage of conservationists, so my passion for protecting our pale blue dot is also at the forefront of most decisions I make. <br><br><span class='subtitle'>A quote I remember often:</span><br><q>The human condition is characterized by the probability of suffering and the certainty of death—a fate which human reason cannot accept as reasonable.</q> –Albert Camus<br><br><span class='subtitle'>Books I'm in the middle of:</span><br>The Omnivores Dilemma by Michael Pollen<br>Player Piano by Kurt Vonnegut</p>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>
+
+<script>
+    function updatePage(page)
+    {
+        var about = "<h1>I study Computer Science and sometimes Mathematics</h1><h1>I'm passionate about helping people</h1><p class='about'><span class='subtitle'>I’m a Computer Science student at Northern Arizona University</span><br>I’m pretty fond of new technology, but I’m especially interested in using artificial intelligence to help people whose struggles have been looked over. Right now, I spend most of my time studying and working (i.e., staring at screens), but I also fit in some good books here and there, train for ultramarathons when I’m not too injured, and play the occasional video game.<br><br><span class='subtitle'>Outside of my university studies...</span><br>I’ve been interested in the relationship’s humans have with their food – specifically, how industrialization has undermined the deep connections we used to have with what was on our plate. Also, I come from a lineage of conservationists, so my passion for protecting our pale blue dot is also at the forefront of most decisions I make. <br><br><span class='subtitle'>A quote I remember often:</span><br><q>The human condition is characterized by the probability of suffering and the certainty of death—a fate which human reason cannot accept as reasonable.</q> –Albert Camus<br><br><span class='subtitle'>Books I'm in the middle of:</span><br>The Omnivores Dilemma by Michael Pollen<br>Player Piano by Kurt Vonnegut</p>";
+        
+        var project = "<h1> Peer to Peer (P2P) Distributed Chat </h1><h1> Operating System Simulator </h1><br><p>**Project previews are in progress. All code is privately hosted on Github, but available for viewing upon request.**</p>";
+        
+        var resume = "<iframe class='pdf' src='jonasDunhamJordahl.pdf' height='800' width='700'></iframe>";
+        
+        var active = page;
+        var nonActive = ['about', 'project', 'resume'];
+        
+//        for(var i = 0; i < nonActive.length; i++)
+//        {
+//            if(nonActive[i] !== page)
+//            {
+//                document.getElementById(nonActive[i]).classList.remove('active');
+//            }
+//            else
+//            {
+//                document.getElementById(nonActive[i]).classList.add('active');
+//            }
+//            
+//        }
+        
+        if( page == 'about' )
+        {
+            document.getElementById("content").innerHTML = about;
+        }
+        else if( page == 'project' )
+        {
+            document.getElementById("content").innerHTML = project;
+        }
+        else if( page == 'resume' )
+        {
+            document.getElementById("content").innerHTML = resume;
+        }
+    }
+</script>
