@@ -2,73 +2,248 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<title> Jonas Dunham Jordahl </title>
+		<title>Jonas Dunham Jordahl</title>
 		<link rel="stylesheet"  type="text/css" href="index.css">
 	</head>
-	<body class="bg">
-        <div class="main-div d-flex">
-            <div class="left-nav-bar">
-                <div id="portraitFrame">
-                    <img id="portrait" src="jonasPortrait.JPG" alt="me">
-                </div>
-                <ul class="menu">
-                  <li id="about" class="active"><a onclick="updatePage('about')">About</a></li>
-                  <li id="project"><a onclick="updatePage('project')">Projects</a></li>
-                  <li><a href="jonasDunhamJordahl.pdf">Resume</a></li>
-                </ul>
-                <div class="contact">
-                    <p>Northern Arizona University</p>
-                    <p>jdunjords@gmail.com</p>
-                    <a href="https://github.com/jdunjords/"><img src="github.png"></a>
+	<body>
+
+        <!-- LEFT - nav bar -->
+
+        <div class="nav-bar">
+            <div id="nav-wrapper">
+
+            </div>
+            <div id="portraitFrame">
+                <img id="portrait" src="jonasPortrait.JPG" alt="A handsome headshot of Jonas.">
+            </div>
+            <ul class="menu solar-yellow">
+                <li id="about" class="active no-bullet"><a onclick="updatePage('about')">jdj.about()</a></li>
+                <li id="project" class="no-bullet"><a onclick="updatePage('project')">jdj.projects()</a></li>
+                <!-- <li class="no-bullet"><a class="solar-yellow" href="jonasDunhamJordahl.pdf">jdj.resume()</a></li> -->
+                <li id="resume" class="no-bullet"><a onclick="updatePage('resume')">jdj.resume()</a></li>
+            </ul>
+            <div class="contact">
+                <p class="solar-yellow">Northern Arizona University</p>
+                <p ><a class="solar-yellow" href="mailto:jdunjords@gmail.com">jdunjords@gmail.com</a></p>
+                <a href="https://github.com/jdunjords/"><img src="github.png"></a>
+            </div>
+        </div>
+
+        <!-- RIGHT - images -->
+
+        <div id="climb-pics-wrapper">
+
+            <h3 class="solar-blue" style="text-align: center;">// Some Recent Climbs</h3>
+            
+            <div  id="top-pic" class="climb-pics-frame">
+                <img class="climb-pics" src="2legit2quit.JPG" alt="Fay Canyon in Sedona.">
+                <div class="img-description-wrapper">
+                    <p class="img-description solar-yellow"><i class="solar-yellow">2 Legit 2 Quit</i></p>
                 </div>
             </div>
-            <div class="right-content">
-                <div class="name-title">
-                    <h1 id="name">Jonas Dunham Jordahl</h1>
+            
+            <!-- <div  id="bottom-pic" class="climb-pics-frame">
+                <img class="climb-pics" src="themace.JPG" alt="Fay Canyon in Sedona.">
+                <div class="img-description-wrapper">
+                    <p class="img-description solar-yellow">
+                        <i class="solar-yellow">The Mace</i>
+                    </p>
                 </div>
-                <div id="content">
-                    <h1>I study Computer Science and sometimes Mathematics</h1><h1>I'm passionate about helping people</h1><p class='about'><span class='subtitle'>I’m a Computer Science student at Northern Arizona University</span><br>I’m pretty fond of new technology, but I’m especially interested in using artificial intelligence to help people whose struggles have been looked over. Right now, I spend most of my time studying and working (i.e., staring at screens), but I also fit in some good books here and there, train for ultramarathons when I’m not too injured, and play the occasional video game.<br><br><span class='subtitle'>Outside of my university studies...</span><br>I’ve been interested in the relationship’s humans have with their food – specifically, how industrialization has undermined the deep connections we used to have with what was on our plate. Also, I come from a lineage of conservationists, so my passion for protecting our pale blue dot is also at the forefront of most decisions I make. <br><br><span class='subtitle'>A quote I remember often:</span><br><q>The human condition is characterized by the probability of suffering and the certainty of death—a fate which human reason cannot accept as reasonable.</q> –Albert Camus<br><br><span class='subtitle'>Books I'm in the middle of:</span><br>The Omnivores Dilemma by Michael Pollen<br>Player Piano by Kurt Vonnegut</p>
+            </div> -->
+            
+        </div>
+
+        <!-- CENTER - content -->
+
+        <div id="center-wrapper">
+
+            <div class="center-content">
+
+                <div>
+                    <h2 class="name"  style="margin-right: 15%;">
+                        <span class="solar-yellow">JonasDunhamJordahl jdj</span> = 
+                    </h2>
+                    <h2 class="name" style="margin-left: 15%;">
+                        <span class="solar-blue">new</span>
+                        <span class="solar-green">SoftwareDeveloper</span>();<span class="blinking-cursor">|</span>
+                    </h2>
+                </div>
+                
+                <div id="content" class='about' align="justify">
+                    <p>
+                        <h3 class="solar-blue">// Work and School</h3>
+                        <span>
+                            I’m a senior Computer Science student at <b">Northern Arizona University</b>, 
+                            and expect to graduate in May 2021. Over the past 2 years, I’ve been a Teaching Assistant 
+                            (TA) for Data Structures and Algorithms (CS 249) and Automata Theory (CS 315). I honed my 
+                            recursive thinking during 2 semesters as a Data Structures and Algorithms TA, and I'm 
+                            continually challenged to think differently about computation when helping students with 
+                            Automata Theory.
+                        </span>
+                        
+                        <span>
+                            I’ve also been a Research Assistant in 2 different labs. The first lab I worked in was the 
+                            NAU IoT Research Lab, where I led development on an overhead occupancy counter that 
+                            employed open-source libraries and a Raspberry Pi. I now work in a different lab which 
+                            is funded by a partnership between NAU and the Air Force Research Lab (AFRL). Here, I 
+                            actively work on developing libraries for use in the simulation of a secure processor 
+                            that runs on a RISC-V architecture.
+                        </span>
+    
+                        <h3 class="solar-blue">// Other Interests</h3>
+                        <span>
+                            Outside of work and school, I consistently push my physical limits by climbing as much as 
+                            I can, and also try to fit in some running, biking, snowboarding, reading, and gaming as 
+                            time and weather permit. My favorite part about living in the southwest is the endless 
+                            outdoor opportunities we have access to. Lately, I’ve been most interested in climbing 
+                            tall sandstone walls and towers in Sedona, where there is a lifetime worth 
+                            of climbing adventures to be had.
+                        </span>
+    
+                        <h3 class="solar-blue">// Inspirational Books</h3>
+                        <ul class='list-indent'>
+                            <li><i class="solar-yellow">The Second Machine Age</i> by <span class="solar-green">Andrew McAfee and Erik Brynjolfsson</span></li>
+                            <li><i class="solar-yellow">Algorithms to Live By</i> by <span class="solar-green">Brian Christian and Tom Griffiths</span></li>
+                            <li><i class="solar-yellow">The Hitchhikers Guide to the Galaxy</i> by  <span class="solar-green">Douglas Adams</span></li>
+                            <li><i class="solar-yellow">How to Change Your Mind</i> by <span class="solar-green">Michael Pollen</span></li>
+                            <li><i class="solar-yellow">The Omnivores Dilemma</i> by <span class="solar-green">Michael Pollen</span></li>
+                            <li><i class="solar-yellow">The Monkey Wrench Gang</i> by <span class="solar-green">Edward Abbey</span></li>
+                            <li><i class="solar-yellow">Desert Solitaire</i> by <span class="solar-green">Edward Abbey</span></li>
+                            <li><i class="solar-yellow">Player Piano</i> by <span class="solar-green">Kurt Vonnegut</span></li>
+                            <li><i class="solar-yellow">Siddhartha</i> by <span class="solar-green">Hermann Hesse</span></li>
+                            <li><i class="solar-yellow">Eat and Run</i> by <span class="solar-green">Scott Jurek</span></li>
+                            <li><i class="solar-yellow">1984</i> by <span class="solar-green">George Orwell</span></li>
+                        </ul>
+    
+                        <h3 class="solar-blue">// Favorite Climbs</h3>
+                        <ul class='list-indent'>
+                            <li><i class="solar-yellow">Chasing Dragons</i> at <span class="solar-green">Peak's Crag</span> in <span class="solar-green">Flagstaff</span></li>
+                            <li><i class="solar-yellow">Mulligan Pie</i> at <span class="solar-green">Hobo Jungle</span> in <span class="solar-green">Flagstaff</span></li>
+                            <li><i class="solar-yellow">2 Legit 2 Quit</i> at <span class="solar-green">Fay Buttress</span> in <span class="solar-green">Sedona</span></li>
+                            <li><i class="solar-yellow">The Mace</i> at <span class="solar-green">Cathedral Rocks</span> in <span class="solar-green">Sedona</span></li>
+                            <li><i class="solar-yellow">Purple Shark</i> at <span class="solar-green">The Pit</span> in <span class="solar-green">Flagstaff</span></li>
+                        </ul>
+    
+                        <h3 class="solar-blue">// TODO: Climb These!</h3>
+                        <ul class='list-indent'>
+                            <li><i class="solar-yellow">Touched By an Angel</i> in <span class="solar-green">Mormon Canyon, Sedona</span></li>
+                            <li><i class="solar-yellow">Moonlight Buttress (free)</i> in <span class="solar-green">Zion</span></li>
+                            <li><i class="solar-yellow">Supercrack</i> in <span class="solar-green">Indian Creek</span></li>
+                            <li><i class="solar-yellow">Castelton Tower</i> in <span class="solar-green">Moab</span></li>
+                            <li><i class="solar-yellow">Half Dome</i> in <span class="solar-green">Yosemite</span></li>
+                        </ul>
+                    </p>
                 </div>
             </div>
         </div>
-	</body>
+    </body>
+    <footer style="font-size: .65em; text-align: center;">
+        Updated December 7th, 2020. Don't think too hard about the inheritance in the header :)
+    </footer>
+
 </html>
 
 <script>
-    function updatePage(page)
-    {
-        var about = "<h1>I study Computer Science and sometimes Mathematics</h1><h1>I'm passionate about helping people</h1><p class='about'><span class='subtitle'>I’m a Computer Science student at Northern Arizona University</span><br>I’m pretty fond of new technology, but I’m especially interested in using artificial intelligence to help people whose struggles have been looked over. Right now, I spend most of my time studying and working (i.e., staring at screens), but I also fit in some good books here and there, train for ultramarathons when I’m not too injured, and play the occasional video game.<br><br><span class='subtitle'>Outside of my university studies...</span><br>I’ve been interested in the relationship’s humans have with their food – specifically, how industrialization has undermined the deep connections we used to have with what was on our plate. Also, I come from a lineage of conservationists, so my passion for protecting our pale blue dot is also at the forefront of most decisions I make. <br><br><span class='subtitle'>A quote I remember often:</span><br><q>The human condition is characterized by the probability of suffering and the certainty of death—a fate which human reason cannot accept as reasonable.</q> –Albert Camus<br><br><span class='subtitle'>Books I'm in the middle of:</span><br>The Omnivores Dilemma by Michael Pollen<br>Player Piano by Kurt Vonnegut</p>";
+    function updatePage(page) {
+        var about = 
+            "<p>\
+                <h3 class='solar-blue'>// Work and School</h3>\
+                <span>I’m a senior Computer Science student at <b'>Northern Arizona University</b>, \
+                    and expect to graduate in May 2021. Over the past 2 years, I’ve been a Teaching \
+                    Assistant (TA) for Data Structures and Algorithms (CS 249) and Automata Theory \
+                    (CS 315). I honed my recursive thinking during 2 semesters as a Data Structures and \
+                    Algorithms TA, and I'm continually challenged to think differently about computation \
+                    when helping students with Automata Theory.\
+                </span>\
+                <span> \
+                    I’ve also been a Research Assistant in 2 different labs. The first lab I worked in \
+                    was the  NAU IoT Research Lab, where I led development on an overhead occupancy counter  \
+                    that  employed open-source libraries and a Raspberry Pi. I now work in a different lab which \
+                    is funded by a partnership between NAU and the Air Force Research Lab (AFRL). \
+                    Here, I actively work on developing libraries for use in the simulation of a secure processor \
+                    that runs on a RISC-V architecture.\
+                </span> \
+                <h3 class='solar-blue'>// Other Interests</h3>\
+                <span>\
+                    Outside of work and school, I consistently push my physical limits by climbing as much as  \
+                    I can, and also try to fit in some running, biking, snowboarding, reading, and gaming as  \
+                    time and weather permit. My favorite part about living in the southwest is the endless  \
+                    outdoor opportunities we have access to. Lately, I’ve been most interested in climbing  \
+                    tall sandstone walls and towers in Sedona, where there is a lifetime worth  \
+                    of climbing adventures to be had. \
+                </span> \
+                <h3 class='solar-blue'>// Inspirational Books</h3> \
+                <ul class='list-indent'> \
+                    <li><i class='solar-yellow'>The Second Machine Age</i> by <span class='solar-green'>Andrew McAfee and Erik Brynjolfsson</span></li> \
+                    <li><i class='solar-yellow'>Algorithms to Live By</i> by <span class='solar-green'>Brian Christian and Tom Griffiths</span></li> \
+                    <li><i class='solar-yellow'>The Hitchhikers Guide to the Galaxy</i> by  <span class='solar-green'>Douglas Adams</span></li> \
+                    <li><i class='solar-yellow'>How to Change Your Mind</i> by <span class='solar-green'>Michael Pollen</span></li> \
+                    <li><i class='solar-yellow'>The Omnivores Dilemma</i> by <span class='solar-green'>Michael Pollen</span></li>\
+                    <li><i class='solar-yellow'>The Monkey Wrench Gang</i> by <span class='solar-green'>Edward Abbey</span></li>\
+                    <li><i class='solar-yellow'>Desert Solitaire</i> by <span class='solar-green'>Edward Abbey</span></li>\
+                    <li><i class='solar-yellow'>Player Piano</i> by <span class='solar-green'>Kurt Vonnegut</span></li>\
+                    <li><i class='solar-yellow'>Siddhartha</i> by <span class='solar-green'>Hermann Hesse</span></li>\
+                    <li><i class='solar-yellow'>Eat and Run</i> by <span class='solar-green'>Scott Jurek</span></li>\
+                    <li><i class='solar-yellow'>1984</i> by <span class='solar-green'>George Orwell</span></li>\
+                </ul>\
+                <h3 class='solar-blue'>// Favorite Climbs</h3>\
+                <ul class='list-indent'>\
+                    <li><i class='solar-yellow'>Chasing Dragons</i> at <span class='solar-green'>Peak's Crag</span> in <span class='solar-green'>Flagstaff</span></li>\
+                    <li><i class='solar-yellow'>Mulligan Pie</i> at <span class='solar-green'>Hobo Jungle</span> in <span class='solar-green'>Flagstaff</span></li>\
+                    <li><i class='solar-yellow'>2 Legit 2 Quit</i> at <span class='solar-green'>Fay Buttress</span> in <span class='solar-green'>Sedona</span></li>\
+                    <li><i class='solar-yellow'>The Mace</i> at <span class='solar-green'>Cathedral Rocks</span> in <span class='solar-green'>Sedona</span></li>\
+                    <li><i class='solar-yellow'>Purple Shark</i> at <span class='solar-green'>The Pit</span> in <span class='solar-green'>Flagstaff</span></li>\
+                </ul>\
+                <h3 class='solar-blue'>// TODO: Climb These!</h3>\
+                <ul class='list-indent'>\
+                    <li><i class='solar-yellow'>Touched By an Angel</i> in <span class='solar-green'>Mormon Canyon, Sedona</span></li>\
+                    <li><i class='solar-yellow'>Moonlight Buttress (free)</i> in <span class='solar-green'>Zion</span></li>\
+                    <li><i class='solar-yellow'>Supercrack</i> in <span class='solar-green'>Indian Creek</span></li>\
+                    <li><i class='solar-yellow'>Castelton Tower</i> in <span class='solar-green'>Moab</span></li>\
+                    <li><i class='solar-yellow'>Half Dome</i> in <span class='solar-green'>Yosemite</span></li>\
+                </ul>\
+            </p>";
         
-        var project = "<h1> Peer to Peer (P2P) Distributed Chat </h1><h1> Operating System Simulator </h1><br><p>**Project previews are in progress. All code is privately hosted on Github, but available for viewing upon request.**</p>";
+        var project =    
+            "<h1 class='solar-blue'>// Most Important Projects:</h1>\
+            <ul>\
+                <li>Peer-to-Peer (P2P) Distributed Chat (CS465, Distributed Systems)</li>\
+                <li>Basic Operating System Simulator (CS480, Operating Systems)</li>\
+                <li>Recursive Ray-tracer (CS430, Computer Graphics)</li>\
+            </ul>\
+            <br>\
+            <p>Project previews are in progress. All code is privately hosted on GitHub, but available for viewing upon request!</p>";
         
-        var resume = "<iframe class='pdf' src='jonasDunhamJordahl.pdf' height='800' width='700'></iframe>";
+        var resume = "<embed src='jonasDunhamJordahl.pdf' type='application/pdf' height='100%' width='100%'/>";
+        // <iframe class='pdf' src='jonasDunhamJordahl.pdf' height='800' width='700'></iframe>";
+
+        var pages = ['about','project', 'resume'];
+
+        for (var i =0; i < 3; i++) {
+
+            if (page === 'about') {
+                document.getElementById('about').classList.add('active');
+                document.getElementById('project').classList.remove('active');
+                document.getElementById('resume').classList.remove('active');
+            } else if (page === 'project') {
+                document.getElementById('about').classList.remove('active');
+                document.getElementById('project').classList.add('active');
+                document.getElementById('resume').classList.remove('active');
+            } else {
+                document.getElementById('about').classList.remove('active');
+                document.getElementById('project').classList.remove('active');
+                document.getElementById('resume').classList.add('active');
+            }
+        }
         
-        var active = page;
-        var nonActive = ['about', 'project', 'resume'];
-        
-//        for(var i = 0; i < nonActive.length; i++)
-//        {
-//            if(nonActive[i] !== page)
-//            {
-//                document.getElementById(nonActive[i]).classList.remove('active');
-//            }
-//            else
-//            {
-//                document.getElementById(nonActive[i]).classList.add('active');
-//            }
-//            
-//        }
-        
-        if( page == 'about' )
-        {
+        if( page == 'about' ) {
+            document.getElementById("content").classList.remove('height-80');
             document.getElementById("content").innerHTML = about;
-        }
-        else if( page == 'project' )
-        {
+        } else if ( page == 'project' ) {
+            document.getElementById("content").classList.remove('height-80');
             document.getElementById("content").innerHTML = project;
-        }
-        else if( page == 'resume' )
-        {
+        } else if ( page == 'resume' ) {
+            document.getElementById("content").classList.add('height-80');
             document.getElementById("content").innerHTML = resume;
         }
     }
