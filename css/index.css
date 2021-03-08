@@ -1,0 +1,265 @@
+/*********************** LEFT ***********************/
+.nav-bar {
+  width: 15%;
+  left: 5%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.menu {
+  margin-top: 3em;
+}
+.active {
+  color: #268bd2 !important;
+  font-weight: bold;
+}
+#portrait {
+	width: 10vw;
+	height: 10vw;
+	border-radius: 50%;
+}
+#portraitFrame {
+	text-align: center;
+  padding: 15px 9px 9px 9px;
+}
+.contact {
+  margin-top: 3em;
+  text-align: center;
+}
+
+/********************** CENTER **********************/
+.content-wrapper {
+  border-radius: 3em;
+  background-color: #002833;
+  position: fixed;
+  left: 2%;
+  right: 2%;
+  top: 3%;
+  bottom: 3%;
+}
+#center-wrapper {
+  position: fixed;
+  left: 25%;
+  right: 30%;
+  top: 5%;
+  bottom: 3%;
+}
+.center-content {
+  height: 80%;
+  overflow-y: auto;
+}
+.about {
+  padding: 0 2em 0 2em;
+}
+.name {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+}
+.name-wrapper {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.pdf {
+  display: block;
+  margin: auto;
+  margin-top: 1.2em;
+}
+
+/*********************** RIGHT **********************/
+#climb-pics-wrapper {
+  width: 20%;
+  right: 5%;
+  margin: auto;
+}
+
+/********************** COLORS **********************/
+.solar-yellow {
+  color: #b58900;
+}
+.solar-blue {
+  color: #268bd2;
+}
+.solar-green {
+  color: #859900;
+}
+.solar-red {
+  color: #dc322f;
+}
+.solar-cyan {
+  color: #2aa198;
+}
+.solar-grey {
+  color: #8cbccd;
+}
+
+/********************* HELPERS **********************/
+.pos-abs {
+  position: absolute;
+}
+.y-align {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.h-overflow {
+  overflow: auto;
+}
+.list-indent {
+  padding-left: 30px;
+}
+.d-flex {
+  display: flex;
+}
+.h-100 {
+  height: 100%;
+}
+.no-bullet {
+  list-style-type: none;
+}
+.text-center {
+  text-align: center;
+}
+
+/********************* EL STYLES ********************/
+ul {
+  margin: 0;
+  padding: 0;
+}
+p a {
+  text-decoration: none;
+}
+li a:hover {
+  font-weight: bold;
+  color: #2aa198;
+}
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  color: #8cbccd;
+}
+footer {
+  position: fixed;
+  bottom: 4px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+body {
+  margin-top: 1%;
+  background-color: #073642;
+  font-family: "Consolas", Menlo, Monaco, 
+                Lucida Console, Liberation Mono, 
+                DejaVu Sans Mono, Bitstream Vera Sans Mono, 
+                Courier New, monospace, serif;
+}
+li a {
+  text-align: center;
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}  
+h1 {
+  font-family: "Consolas", Menlo, Monaco, 
+                Lucida Console, Liberation Mono, 
+                DejaVu Sans Mono, Bitstream Vera Sans Mono, 
+                Courier New, monospace, serif;
+  font-size: 24px; 
+  font-style: normal; 
+  font-variant: normal;
+  font-weight: 500 !important;
+  text-align: center;
+}
+p { 
+  font-family: Consolas, Helvetica, sans-serif;
+  /* font-size: 14px; */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+} 
+blockquote { 
+  font-family: Consolas, Arial, Helvetica, sans-serif;
+  /* font-size: 21px; */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px; }
+pre {
+  font-family: Consolas, Helvetica, sans-serif;
+  /* font-size: 13px; */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
+
+/****************** BLINKING CURSOR *****************/
+.blinking-cursor {
+  /* font-weight: 100; */
+  font-size: 45px;
+  color: #2E3D48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+@-webkit-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+@-ms-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+} 
+@-o-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+/********************* SCROLLBAR ********************/
+body {
+  scrollbar-width: thin;
+  scrollbar-color:  #b58900  #002833;
+}
+div::-webkit-scrollbar {
+  width: 0.5em;
+}
+div::-webkit-scrollbar-track {
+  background: none;
+}
+div::-webkit-scrollbar-thumb {
+  background-color: #b58900;
+  border-radius: 20px;
+  border: none;
+}
