@@ -73,6 +73,17 @@
   right: 5%;
   margin: auto;
 }
+/* .carousel-caption {
+	
+} */
+#block-under-image {
+	background-color: #073642;
+	height: 15em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
 
 /********************** COLORS **********************/
 .solar-yellow {
@@ -122,6 +133,9 @@
 }
 
 /********************* EL STYLES ********************/
+img {
+	border-radius: 30px;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -172,7 +186,10 @@ h1 {
   text-align: center;
 }
 p { 
-  font-family: Consolas, Helvetica, sans-serif;
+  font-family: "Consolas", Menlo, Monaco, 
+	Lucida Console, Liberation Mono, 
+	DejaVu Sans Mono, Bitstream Vera Sans Mono, 
+	Courier New, monospace, serif;
   /* font-size: 14px; */
   font-style: normal;
   font-variant: normal;
